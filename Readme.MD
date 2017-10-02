@@ -134,8 +134,6 @@ For macOS 10.13, you don't need the "HFSPlus.efi" unless you have to install you
 
 You do need OsxAptioFixDrv-64.efi (do watch the spelling of the filename with caution).
 
-In my current Clover configuration I have the following EFI drivers existed under `/EFI/EFI/Clover/driver64UEFI/` folder, and I forgot which of them are not necessary: 
-
-- `apfs.efi` - `AppleImageCodec-64.efi` - `AppleKeyAggregator-64.efi` - `AppleUITheme-64.efi` - `DataHubDxe-64.efi` - `EmuVariableUefi-64.efi` - `Fat-64.efi` - `FirmwareVolume-64.efi` - `FSInject-64.efi` - `HFSPlus.efi` - `OsxAptioFixDrv-64.efi` - `OsxFatBinaryDrv-64.efi` - `SMCHelper-64.efi` 
+In my current Clover configuration I have the following EFI drivers existed under `/EFI/EFI/Clover/driver64UEFI/` folder, and I forgot which of them are not necessary: `apfs.efi` `AppleImageCodec-64.efi` `AppleKeyAggregator-64.efi` `AppleUITheme-64.efi` `DataHubDxe-64.efi` `EmuVariableUefi-64.efi` `Fat-64.efi` `FirmwareVolume-64.efi` `FSInject-64.efi` `HFSPlus.efi` `OsxAptioFixDrv-64.efi` `OsxFatBinaryDrv-64.efi` `SMCHelper-64.efi`.
 
 $ End of File.
