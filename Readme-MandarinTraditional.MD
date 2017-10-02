@@ -128,19 +128,19 @@ Piker Alpha 有就 CPU 電源管理寫了[專用的 SSDT 冷修正檔案生成�
 
 2. 在 Clover Configurator 的 SMBIOS 畫面內的右側，應該有個大問號圖樣、或者某個具體的某款 Mac 電腦產品的圖樣（取決於已經在該窗格當中填寫的 SMBIOS 資訊），在該圖樣的右下角應該有個按鈕（裡面有兩個箭頭，分別指上、指下）。點摁該按鈕之後，在上下文選單當中選取正確的模擬指定機種（這裡選擇 `iMac14,2`）。只要您的 Clover Configurator 版本沒過期的話，在您點選模擬指定機種的那一瞬間，Clover Configurator 就已經自動隨機生成了一套 SMBIOS 辨識碼組，其中包含了「主機板辨識碼 `Board-ID (BID)`」、「主機板序號 `Board Serial Number (MLB)`」和「產品序號 `Serial Number (Product Serial Number, PSN)」這三碼。您可以隨時摁下「Generate New」按鈕來另行隨機生成一組新的 SMBIOS 辨識碼組。
 
-  [1] 您得意識到：直接挪用一台正品 Mac 電腦的 SMBIOS 辨識碼組和/或 SmUUID 的行為，就是對這台正品 Mac 電腦的所有者的法定權益（使用、享受與 Apple ID 有關的服務）的侵害、且會導致某些災難性的問題：這台正品 Mac 電腦可能會被 Apple 列入黑名單、且不接受任何申訴；只要是在使用其 SMBIOS 辨識碼組和/或 SmUUID 的黑蘋果電腦上使用過的 Apple ID，都會有同樣被停權的風險。類似的問題也會出現在「共用同一組 SMBIOS 辨識碼組和 SmUUID 的多台黑蘋果電腦」的情形下。
+  - 您得意識到：直接挪用一台正品 Mac 電腦的 SMBIOS 辨識碼組和/或 SmUUID 的行為，就是對這台正品 Mac 電腦的所有者的法定權益（使用、享受與 Apple ID 有關的服務）的侵害、且會導致某些災難性的問題：這台正品 Mac 電腦可能會被 Apple 列入黑名單、且不接受任何申訴；只要是在使用其 SMBIOS 辨識碼組和/或 SmUUID 的黑蘋果電腦上使用過的 Apple ID，都會有同樣被停權的風險。類似的問題也會出現在「共用同一組 SMBIOS 辨識碼組和 SmUUID 的多台黑蘋果電腦」的情形下。
   
-  [2]  請造訪 https://everymac.com/ultimate-mac-lookup/ 網站、使用您的產品序號（PSN）來看看該網站所反饋的結果是否與您的 SMBIOS 模擬指定機種互相重合。**如果不重合、或者返回其它「認為該產品序號有誤」的結果的話，請返回 Clover Configurator 再生成一組新的 SMBIOS 辨識碼組來測試**。
+  - 請造訪 https://everymac.com/ultimate-mac-lookup/ 網站、使用您的產品序號（PSN）來看看該網站所反饋的結果是否與您的 SMBIOS 模擬指定機種互相重合。**如果不重合、或者返回其它「認為該產品序號有誤」的結果的話，請返回 Clover Configurator 再生成一組新的 SMBIOS 辨識碼組來測試**。
   
-  [3] 請在之後造訪 https://checkcoverage.apple.com/ 網站、使用您的產品序號（PSN）來看看該網站能否據此序號查出一款具體的 Mac 電腦的保固資訊。**如果有查出的話，這一組 SMBIOS 辨識碼組都不要用了、請返回 Clover Configurator 再生成一組新的 SMBIOS 辨識碼組、來重複這兩道測試**。當且僅當該網站的反饋結果為「We're sorry, but this serial number is not valid. Please check your information and try again.」時，一套 SMBIOS 辨識碼組的可用性才算測試通過、可以投入使用了。
+  - 請在之後造訪 https://checkcoverage.apple.com/ 網站、使用您的產品序號（PSN）來看看該網站能否據此序號查出一款具體的 Mac 電腦的保固資訊。**如果有查出的話，這一組 SMBIOS 辨識碼組都不要用了、請返回 Clover Configurator 再生成一組新的 SMBIOS 辨識碼組、來重複這兩道測試**。當且僅當該網站的反饋結果為「We're sorry, but this serial number is not valid. Please check your information and try again.」時，一套 SMBIOS 辨識碼組的可用性才算測試通過、可以投入使用了。
   
 3. 切換回 Clover Configurator 的畫面，將剛才藉由終端指令「uuidgen」生成的 SmUUID 填入到對應的窗格內。
 
 4. 請確認 Clover Configurator 是否已經自動幫您填好韌體五項： `Firmware Features`、`Firmware Features Mask`、`Platform Feature`、`Bios Version`、`Bios Release Date`。（這一條對 macOS 10.13 開始的系統而言至關重要，在之前都是不痛不癢的東西。）
 
-  [1] 用於韌體五項的正確參數因 SMBIOS 模擬指定機種、及該機種對應的 Apple 官方最新的韌體更新而異。
+  - 用於韌體五項的正確參數因 SMBIOS 模擬指定機種、及該機種對應的 Apple 官方最新的韌體更新而異。
   
-  [2] 如果您在重複利用之前的 Clover 配置檔案、且該檔案使用相同的 SMBIOS 模擬指定機種的話，請用最新版的 Clover Configurator 新開一個檔案、點開 SMBIOS 畫面、選取相同的模擬指定機種、將該畫面內自動生成的韌體五項的資料手動轉移至您自己的 Clover 配置檔案當中。
+  - 如果您在重複利用之前的 Clover 配置檔案、且該檔案使用相同的 SMBIOS 模擬指定機種的話，請用最新版的 Clover Configurator 新開一個檔案、點開 SMBIOS 畫面、選取相同的模擬指定機種、將該畫面內自動生成的韌體五項的資料手動轉移至您自己的 Clover 配置檔案當中。
 
 ###### 9. Rt Variables （Runtime Variables，執行階段變數）
 
