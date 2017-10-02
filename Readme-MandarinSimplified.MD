@@ -134,7 +134,7 @@ Piker Alpha 有就 CPU 电源管理写了[专用的 SSDT 冷修正档案生成�
 
 2. 在 Clover Configurator 的 SMBIOS 画面内的右侧，应该有个大问号图样、或者某个具体的某款 Mac 电脑产品的图样（取决于已经在该窗格当中填写的 SMBIOS 资讯），在该图样的右下角应该有个按钮（里面有两个箭头，分别指上、指下）。点摁该按钮之后，在上下文选单当中选取正确的模拟指定机种（这里选择 `iMac14,2`）。只要您的 Clover Configurator 版本没过期的话，在您点选模拟指定机种的那一瞬间，Clover Configurator 就已经自动随机生成了一套 SMBIOS 辨识码组，其中包含了「主机板辨识码 `Board-ID (BID)`」、「主机板序号 `Board Serial Number (MLB)`」和「产品序号 `Serial Number (Product Serial Number, PSN)」这三码。您可以随时摁下「Generate New」按钮来另行随机生成一组新的 SMBIOS 辨识码组。
 
-  - 您得意识到：直接挪用一台正品 Mac 电脑的 SMBIOS 辨识码组和/或 SmUUID 的行为，就是对这台正品 Mac 电脑的所有者的法定权益（使用、享受与 Apple ID 有关的服务）的侵害、且会导致某些灾难性的问题：这台正品 Mac 电脑可能会被 Apple 列入黑名单、且不接受任何申诉；只要是在使用其 SMBIOS 辨识码组和/或 SmUUID 的黑苹果电脑上使用过的 Apple ID，都会有同样被停权的风险。类似的问题也会出现在「共用同一组 SMBIOS 辨识码组和 SmUUID 的多台黑苹果电脑」的情形下。
+  - 您得意识到：直接挪用一台正品 Mac 电脑的 SMBIOS 辨识码组和/或 SmUUID 的行为，就是对这台正品 Mac 电脑的所有者的法定权益（使用、享受与 Apple ID 有关的服务）的侵害、且会导致某些灾难性的问题：这台正品 Mac 电脑可能会被 Apple 列入黑名单、且不接受任何申诉；只要是在使用其 SMBIOS 辨识码组和/或 SmUUID 的 mac 兼容机上使用过的 Apple ID，都会有同样被停权的风险。类似的问题也会出现在「共用同一组 SMBIOS 辨识码组和 SmUUID 的多台 mac 兼容机」的情形下。
   
   - 请造访 https://everymac.com/ultimate-mac-lookup/ 网站、使用您的产品序号（PSN）来看看该网站所反馈的结果是否与您的 SMBIOS 模拟指定机种互相重合。**如果不重合、或者返回其它「认为该产品序号有误」的结果的话，请返回 Clover Configurator 再生成一组新的 SMBIOS 辨识码组来测试**。
   
