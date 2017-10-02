@@ -11,15 +11,21 @@
 
 GB-BNi7HG4-950 隨機裝附 Intel 的 Wifi-藍芽模組，且該模組無 macOS 驅動可用。除非您篤定您用不到任何無線功能（比如 Continuity、Wifi、藍芽、AirDrop），否則請換裝 Broadcom BCM94352Z。
 
-另註：該解決方案（包括本文）不涵蓋、不討論任何針對版載音效晶片的啟用方法，只因為筆者用不到（筆者的桌機只可能會使用諸如 NI Komplete Audio 6 這樣的 USB 音訊介面）。如果有誰想啟用版載音效晶片的話，請自行尋找其它解決方案。
+另註：該解決方案（包括本文）不涵蓋、不討論任何針對板載音效晶片的啟用方法，只因為筆者用不到（筆者的桌機只可能會使用諸如 NI Komplete Audio 6 這樣的 USB 音訊介面）。如果有誰想啟用板載音效晶片的話，請自行尋找其它解決方案。
 
 ##### 要放在 `/Library/Extensions/` 目錄下的 Kext 驅動：
 
-* `BrcmFirmwareRepo.kext` 和 `BrcmPatchRAM2.kext`，源於最新的「OS-X-BrcmPatchRAM」封包：https://bitbucket.org/RehabMan/os-x-brcmpatchram/downloads/ * `FakePCIID_Broadcom_WiFi.kext` 和 `FakePCIID.kext`，源於最新的「FakePCIID」封包：https://bitbucket.org/RehabMan/os-x-fake-pci-id/downloads/
+* `BrcmFirmwareRepo.kext` 和 `BrcmPatchRAM2.kext`，源於最新的「[OS-X-BrcmPatchRAM](https://bitbucket.org/RehabMan/os-x-brcmpatchram/downloads/)」封包。
+
+* `FakePCIID_Broadcom_WiFi.kext` 和 `FakePCIID.kext`，源於最新的「[FakePCIID](https://bitbucket.org/RehabMan/os-x-fake-pci-id/downloads/)」封包。
 
 ##### 要放在 `/EFI/EFI/Clover/kexts/Other/`目錄下的 Kext 驅動：
 
-* `FakeSMC.kext`，源於最新的「OS-X-FakeSMC-kozlek」封包：https://bitbucket.org/RehabMan/os-x-fakesmc-kozlek/downloads/* `IntelMausiEthernet.kext`，源於最新的「OS-X-intel-network」封包： https://bitbucket.org/RehabMan/os-x-intel-network/downloads/* `USBInjectAll.kext`，源於最新的「OS-X-USB-Inject-All」封包：https://bitbucket.org/RehabMan/os-x-usb-inject-all/downloads/
+* `FakeSMC.kext`，源於最新的「[OS-X-FakeSMC-kozlek](https://bitbucket.org/RehabMan/os-x-fakesmc-kozlek/downloads/)」封包。
+
+* `IntelMausiEthernet.kext`，源於最新的「[OS-X-intel-network](https://bitbucket.org/RehabMan/os-x-intel-network/downloads/)」封包。
+
+* `USBInjectAll.kext`，源於最新的「[OS-X-USB-Inject-All](https://bitbucket.org/RehabMan/os-x-usb-inject-all/downloads/)」封包。
 
 #### Clover 的 KextsToPatch 驅動熱修正
 

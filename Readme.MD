@@ -15,11 +15,11 @@ Also note that I do only use USB audio interfaces (mine is Native Instruments Ko
 
 ##### Kexts used in `/Library/Extensions/`:
 
-* `BrcmFirmwareRepo.kext` and `BrcmPatchRAM2.kext` from the **latest** OS-X-BrcmPatchRAM package downloadable via https://bitbucket.org/RehabMan/os-x-brcmpatchram/downloads/ * `FakePCIID_Broadcom_WiFi.kext` and `FakePCIID.kext` from the **latest** FakePCIID package downloadable via https://bitbucket.org/RehabMan/os-x-fake-pci-id/downloads/
+* `BrcmFirmwareRepo.kext` and `BrcmPatchRAM2.kext` from the **latest** OS-X-BrcmPatchRAM package downloadable via https://bitbucket.org/RehabMan/os-x-brcmpatchram/downloads/ , maintained by RehabMan.* `FakePCIID_Broadcom_WiFi.kext` and `FakePCIID.kext` from the **latest** FakePCIID package downloadable via https://bitbucket.org/RehabMan/os-x-fake-pci-id/downloads/ , maintained by RehabMan.
 
 ##### Kexts used in `/EFI/EFI/Clover/kexts/Other/`:
 
-* `FakeSMC.kext` from the **latest** OS-X-FakeSMC-kozlek package downloadable via https://bitbucket.org/RehabMan/os-x-fakesmc-kozlek/downloads/* `IntelMausiEthernet.kext` from the **latest** OS-X-intel-network package downloadable via https://bitbucket.org/RehabMan/os-x-intel-network/downloads/* `USBInjectAll.kext` from the **latest** OS-X-USB-Inject-All package downloadable via https://bitbucket.org/RehabMan/os-x-usb-inject-all/downloads/
+* `FakeSMC.kext` from the **latest** OS-X-FakeSMC-kozlek package downloadable via https://bitbucket.org/RehabMan/os-x-fakesmc-kozlek/downloads/ , maintained by RehabMan.* `IntelMausiEthernet.kext` from the **latest** OS-X-intel-network package downloadable via https://bitbucket.org/RehabMan/os-x-intel-network/downloads/ , maintained by RehabMan.* `USBInjectAll.kext` from the **latest** OS-X-USB-Inject-All package downloadable via https://bitbucket.org/RehabMan/os-x-usb-inject-all/downloads/ , maintained by RehabMan.
 
 #### Clover KextsToPatch
 
