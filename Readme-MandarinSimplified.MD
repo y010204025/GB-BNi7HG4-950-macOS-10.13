@@ -9,7 +9,7 @@
 
 **请勿将该解决方案用于 macOS 10.12 Sierra**。笔者不建议用该机种运行 macOS 10.12 Sierra、以避免引入过多的第三方修改。
 
-GB-BNi7HG4-950 随机装附 Intel 的 Wifi-蓝芽模组，且该模组无 macOS 驱动可用。除非您笃定您用不到任何无线功能（比如 Handout、Wifi、蓝芽、AirDrop），否则请换装 Broadcom BCM94352Z。
+GB-BNi7HG4-950 随机装附 Intel 的 Wifi-蓝芽模组，且该模组无 macOS 驱动可用。除非您笃定您用不到任何无线功能（比如 Continuity、Wifi、蓝芽、AirDrop），否则请换装 Broadcom BCM94352Z。
 
 另注：该解决方案（包括本文）不涵盖、不讨论任何针对版载音效晶片的启用方法，只因为笔者用不到（笔者的桌机只可能会使用诸如 NI Komplete Audio 6 这样的 USB 音讯介面）。如果有谁想启用版载音效晶片的话，请自行寻找其它解决方案。
 

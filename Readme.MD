@@ -9,7 +9,7 @@ Credits to `RehabMan`, `Natan Zalkin (kozlek)`, `Darkvoid`, `Laura Müller (Miez
 
 **Do not try the solution provided here for macOS 10.12 Sierra.** I do not recommend installing macOS 10.12 on this BRIX model simply due to too many hassles and patches.
 
-Note that the GB-BNi7HG4-950 ships with an Intel Wifi-BT module and you MUST use Broadcom BCM94352Z to replace it UNLESS you don't want to use wireless features such as Handout, WIFI, Bluetooth, and AirDrop.
+Note that the GB-BNi7HG4-950 ships with an Intel Wifi-BT module and you MUST use Broadcom BCM94352Z to replace it UNLESS you don't want to use wireless features such as Continuity, WIFI, Bluetooth, and AirDrop.
 
 Also note that I do only use USB audio interfaces (mine is Native Instruments Komplete Audio 6) on my desktop computers, leading to my lack of the solution on how to enable the built-in audio of this BRIX. Thus, this repo (incl. this article) does not count the onboard audio. If anyone wants to enable the onboard audio, please check solutions from others.
 
