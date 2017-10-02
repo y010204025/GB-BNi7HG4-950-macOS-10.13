@@ -107,7 +107,7 @@ Piker Alpha 有就 CPU 电源管理写了[专用的 SSDT 冷修正档案生成�
 
 ###### 5. GUI （非必需，视具体需求而定）
 
-* Scan（窗格）
+* Scan 窗格
 
   - 先点选 `Custom`，再给 `Entries` 和 `Tool` 打钩。
   
