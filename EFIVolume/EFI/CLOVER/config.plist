@@ -12,7 +12,7 @@
 			<false/>
 			<key>Fixes</key>
 			<dict>
-				<key>FixShutdown_0004</key>
+				<key>FixShutdown</key>
 				<true/>
 			</dict>
 			<key>Name</key>
@@ -103,6 +103,8 @@
 				<false/>
 				<key>PStates</key>
 				<false/>
+				<key>PluginType</key>
+				<true/>
 			</dict>
 		</dict>
 	</dict>
@@ -218,19 +220,19 @@
 		<false/>
 		<key>KernelCpu</key>
 		<false/>
-		<key>KernelHaswellE</key>
-		<false/>
 		<key>KernelLapic</key>
 		<false/>
 		<key>KernelPm</key>
 		<true/>
+		<key>KernelXCPM</key>
+		<false/>
 		<key>KextsToPatch</key>
 		<array>
 			<dict>
 				<key>Comment</key>
 				<string>change 15 port limit to 26 in XHCI kext</string>
 				<key>Disabled</key>
-				<true/>
+				<false/>
 				<key>Find</key>
 				<data>
 				g32MEA==
@@ -295,6 +297,8 @@
 		<string>IM142.88Z.0123.B00.1708211454</string>
 		<key>BoardManufacturer</key>
 		<string>Apple Inc.</string>
+		<key>BoardSerialNumber</key>
+		<string>C02LFNMUF8JCCK217</string>
 		<key>BoardType</key>
 		<integer>10</integer>
 		<key>BoardVersion</key>
@@ -321,6 +325,10 @@
 		<string>0x01</string>
 		<key>ProductName</key>
 		<string>iMac14,2</string>
+		<key>SerialNumber</key>
+		<string>C02LFNMUF8JC</string>
+		<key>SmUUID</key>
+		<string>BBD6E5CA-F50A-4354-86EB-7E269274BBD4</string>
 		<key>Version</key>
 		<string>1.0</string>
 	</dict>
